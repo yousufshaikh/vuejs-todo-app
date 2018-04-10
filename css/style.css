@@ -1,0 +1,34 @@
+.row{
+	margin-top: 30px;
+}
+
+.collapse-one{
+	overflow-y: scroll;
+   	height: 200px;
+}
+
+.message-basic{
+	padding: 30px;
+	background-color: #eceeef;
+	border-radius: 5px;
+	color: #292b2c;
+	margin-top: 25px;
+	border: 5px solid;
+}
+
+.message{
+	padding: 30px;
+	background-color: #5cb856;
+	border-radius: 5px;
+	color: #fff;
+	margin-top: 25px;
+	border: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.custom-text{
+	border: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.strike{
+	text-decoration: line-through;
+}
