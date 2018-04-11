@@ -1,11 +1,10 @@
-new Vue({
+var vm1 = new Vue({
 	el: '#app',
 	data:{
 		todoInfo:{
 			todoTitle: 'Todo Application',
 			todoDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio recusandae doloribus a, ipsum deleniti adipisci assumenda, quod alias impedit magnam neque natus, minima reiciendis corporis omnis ullam aperiam quas dignissimos.',
 		},
-
 		itemNameText: '',
 		itemsNameCarrier: [],
 		itemsCapacity: '10'
@@ -18,8 +17,7 @@ new Vue({
 			}
 		},
 		completeItem:function (key) {
-			console.log(this.key = key);
-			
+						
 		},
 		deleteItem: function(key){
 			var testOne = confirm("Are you sure, you want to delete");
@@ -28,7 +26,6 @@ new Vue({
 			}
 		}
 	},
-
 	computed: {
 		// Sort by alphabatical order
 		// sortItems: function(){
