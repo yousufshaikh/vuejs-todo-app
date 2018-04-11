@@ -8,9 +8,7 @@ var vm1 = new Vue({
 		itemNameText: '',
 		itemsNameCarrier: [],
 		itemsCapacity: '10',
-		styleObj:{
-			textDecoration: ''
-		}
+		fontStrike: "none"
 	},
 	methods:{
 		itemSubmitted: function(){
@@ -19,12 +17,6 @@ var vm1 = new Vue({
 				this.itemNameText = ''
 			}
 		},
-		// completeItem:function (key) {
-		// 		var xxx = this.itemsNameCarrier[key];
-		// 		var yyy =  this.key = key;
-		// 		console.log(xxx);
-		// 		console.log(yyy);
-		// },
 		deleteItem: function(key){
 			var testOne = confirm("Are you sure, you want to delete");
 			if (testOne == true){
@@ -33,6 +25,14 @@ var vm1 = new Vue({
 		}
 	},
 	computed: {
+		styles:function () {
+			return{
+				textDecoration: this.fontStrike
+			}
+		},
+		checkStatus: function(){
+			this.fontStrike = "line-through"
+		}
 		// Sort by alphabatical order
 		// sortItems: function(){
 		// 	return this.itemsNameCarrier.sort()

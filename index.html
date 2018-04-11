@@ -34,8 +34,7 @@
 							<input type="submit" class="btn btn-primary" value="Add Item">
 						</div>
 					</form>
-					<div>Hello Man</div>
-					<div v-bind:style="styleObj">This is man</div>
+					<h2>Hello</h2>
 					<!-- {{ itemNameText }} -->
 					<div class="text-center message" v-if="itemsNameCarrier.length > 0">
 						<h4>Today is batter than another day !</h4>
@@ -60,9 +59,9 @@
 						<tbody>
 							<tr v-for="(item, key) in itemsNameCarrier">
 								<!-- <td></td> -->
-								<td id="item">{{item}}</td>
+								<td id="item" v-bind:style="styles">{{item}}</td>
 								<!-- <td><i class="fa fa-pencil btn btn-info" v-on:click="editItem(key)"></i></td> -->
-								<!-- <td v-on:click="completeItem(key)"><i class="fa fa-check btn btn-success"></i></td> -->
+								<td v-on:click="checkStatus()"><i class="fa fa-check btn btn-success"></i></td>
 								<td><i class="fa fa-times btn btn-danger" v-on:click="deleteItem(key)"></i></td>
 							</tr>
 						</tbody>
