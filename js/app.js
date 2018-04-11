@@ -7,7 +7,10 @@ var vm1 = new Vue({
 		},
 		itemNameText: '',
 		itemsNameCarrier: [],
-		itemsCapacity: '10'
+		itemsCapacity: '10',
+		styleObj:{
+			textDecoration: ''
+		}
 	},
 	methods:{
 		itemSubmitted: function(){
@@ -16,9 +19,12 @@ var vm1 = new Vue({
 				this.itemNameText = ''
 			}
 		},
-		completeItem:function (key) {
-						
-		},
+		// completeItem:function (key) {
+		// 		var xxx = this.itemsNameCarrier[key];
+		// 		var yyy =  this.key = key;
+		// 		console.log(xxx);
+		// 		console.log(yyy);
+		// },
 		deleteItem: function(key){
 			var testOne = confirm("Are you sure, you want to delete");
 			if (testOne == true){
